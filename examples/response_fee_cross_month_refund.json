@@ -1,0 +1,119 @@
+{
+  "merchant_id": "MCH-DEMO-001",
+  "tiers": [
+    {
+      "threshold_cents": 0,
+      "rate_bps": 60
+    },
+    {
+      "threshold_cents": 100000,
+      "rate_bps": 40
+    },
+    {
+      "threshold_cents": 500000,
+      "rate_bps": 30
+    }
+  ],
+  "months": [
+    {
+      "month": "2026-10",
+      "total_payment_cents": 230000,
+      "total_refund_cents": 50000,
+      "net_billing_cents": 180000,
+      "net_fee_cents": 1380,
+      "fee_receivable_cents": 920,
+      "adjustment_cents": -460,
+      "payments": [
+        {
+          "payment_id": "PAY-202610-001",
+          "time_utc": "2026-10-03T02:00:00Z",
+          "amount_cents": 150000,
+          "refund_ids": [
+            "RFD-202611-001"
+          ],
+          "refund_amount_cents": 50000,
+          "net_billing_cents": 100000,
+          "net_fee_cents": 900,
+          "fee_receivable_cents": 600,
+          "adjustment_cents": -300,
+          "occupied_tier_indices": [
+            0
+          ],
+          "segments": [
+            {
+              "tier_index": 0,
+              "rate_bps": 60,
+              "amount_cents": 100000,
+              "fee_scaled_10k": 6000000
+            }
+          ]
+        },
+        {
+          "payment_id": "PAY-202610-002",
+          "time_utc": "2026-10-20T06:30:00Z",
+          "amount_cents": 80000,
+          "refund_ids": [],
+          "refund_amount_cents": 0,
+          "net_billing_cents": 80000,
+          "net_fee_cents": 480,
+          "fee_receivable_cents": 320,
+          "adjustment_cents": -160,
+          "occupied_tier_indices": [
+            1
+          ],
+          "segments": [
+            {
+              "tier_index": 1,
+              "rate_bps": 40,
+              "amount_cents": 80000,
+              "fee_scaled_10k": 3200000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2026-11",
+      "total_payment_cents": 60000,
+      "total_refund_cents": 0,
+      "net_billing_cents": 60000,
+      "net_fee_cents": 400,
+      "fee_receivable_cents": 360,
+      "adjustment_cents": -40,
+      "payments": [
+        {
+          "payment_id": "PAY-202611-001",
+          "time_utc": "2026-11-02T01:15:00Z",
+          "amount_cents": 60000,
+          "refund_ids": [],
+          "refund_amount_cents": 0,
+          "net_billing_cents": 60000,
+          "net_fee_cents": 400,
+          "fee_receivable_cents": 360,
+          "adjustment_cents": -40,
+          "occupied_tier_indices": [
+            0
+          ],
+          "segments": [
+            {
+              "tier_index": 0,
+              "rate_bps": 60,
+              "amount_cents": 60000,
+              "fee_scaled_10k": 3600000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "payment_count": 3,
+    "refund_count": 1,
+    "total_payment_cents": 290000,
+    "total_refund_cents": 50000,
+    "net_billing_cents": 240000,
+    "net_fee_cents": 1780,
+    "fee_receivable_cents": 1280,
+    "adjustment_cents": -500
+  }
+}

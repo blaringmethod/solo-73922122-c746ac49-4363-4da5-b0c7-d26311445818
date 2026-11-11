@@ -3,8 +3,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: reconcile-api:1.0.0
-    container_name: reconcile-api
+    image: payment-reconcile-api:1.1.0
+    container_name: payment-reconcile-api
     ports:
       - "8000:8000"
     restart: unless-stopped

@@ -1,0 +1,29 @@
+{
+  "merchant_id": "MCH-DEMO-BAD",
+  "tiers": [
+    {
+      "threshold_cents": 0,
+      "rate_bps": 33
+    },
+    {
+      "threshold_cents": 12000,
+      "rate_bps": 7
+    }
+  ],
+  "payments": [
+    {
+      "id": "PAY-BAD-001",
+      "time_utc": "2026-11-10T08:00:00Z",
+      "amount_cents": 10000,
+      "net_fee_cents": 33
+    }
+  ],
+  "refunds": [
+    {
+      "id": "RFD-BAD-001",
+      "time_utc": "2026-11-09T08:00:00Z",
+      "original_payment_id": "PAY-BAD-001",
+      "amount_cents": 1000
+    }
+  ]
+}

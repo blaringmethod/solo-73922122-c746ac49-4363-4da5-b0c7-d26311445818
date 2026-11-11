@@ -1,0 +1,45 @@
+{
+  "merchant_id": "MCH-DEMO-001",
+  "tiers": [
+    {
+      "threshold_cents": 0,
+      "rate_bps": 60
+    },
+    {
+      "threshold_cents": 100000,
+      "rate_bps": 40
+    },
+    {
+      "threshold_cents": 500000,
+      "rate_bps": 30
+    }
+  ],
+  "payments": [
+    {
+      "id": "PAY-202610-001",
+      "time_utc": "2026-10-03T02:00:00Z",
+      "amount_cents": 150000,
+      "net_fee_cents": 900
+    },
+    {
+      "id": "PAY-202610-002",
+      "time_utc": "2026-10-20T06:30:00Z",
+      "amount_cents": 80000,
+      "net_fee_cents": 480
+    },
+    {
+      "id": "PAY-202611-001",
+      "time_utc": "2026-11-02T01:15:00Z",
+      "amount_cents": 60000,
+      "net_fee_cents": 400
+    }
+  ],
+  "refunds": [
+    {
+      "id": "RFD-202611-001",
+      "time_utc": "2026-11-05T09:30:00Z",
+      "original_payment_id": "PAY-202610-001",
+      "amount_cents": 50000
+    }
+  ]
+}
